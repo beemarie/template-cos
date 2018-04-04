@@ -3,13 +3,13 @@ packages:
     namespace: _
     actions:
       form-completed:
-        function: formCompleteHtml.js
+        function: actions/formCompleteHtml.js
         runtime: nodejs:8
       handle-form:
-        function: handleForm.js
+        function: actions/handleForm.js
         runtime: nodejs:8
       initial-html:
-        function: initialHtml.js
+        function: actions/initialHtml.js
         runtime: nodejs:8
         web-export: true
     sequences:
