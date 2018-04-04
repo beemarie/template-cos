@@ -15,4 +15,3 @@ packages:
     sequences:
       upload-a-file-sequence:
         actions: handle-form, form-completed, cloud-object-storage/write
-        web-export: true
