@@ -1,0 +1,18 @@
+packages:
+  $PACKAGE_NAME:
+    namespace: _
+    actions:
+      form-completed:
+        function: formCompleteHtml.js
+        runtime: nodejs:8
+      handle-form:
+        function: handleForm.js
+        runtime: nodejs:8
+      initial-html:
+        function: initialHtml.js
+        runtime: nodejs:8
+        web-export: true
+    sequences:
+      upload-a-file-sequence:
+        actions: initialHtml, handleForm, formCompleteHtml
+        web-export: true

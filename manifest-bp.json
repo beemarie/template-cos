@@ -1,0 +1,22 @@
+{
+  "_id": "",
+  "name": "Get External Resource",
+  "description": "This action will accept a single parameter, which must be a JSON object.",
+  "long_description": "This action will accept a single parameter, which must be a JSON object.",
+  "url": "https://github.com/ibm-functions/template-cloud-object-storage",
+  "runtimes": [
+    {
+      "name": "Node.js 6",
+      "kind": "nodejs:6",
+      "type": "nodejs"
+    },
+    {
+      "name": "Python 3",
+      "kind": "python:3",
+      "type": "python",
+    },
+  ],
+  "categories": [
+    "nodejs",
+  ]
+}
