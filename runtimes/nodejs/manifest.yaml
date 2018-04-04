@@ -14,5 +14,5 @@ packages:
         web-export: true
     sequences:
       upload-a-file-sequence:
-        actions: initialHtml, handleForm, formCompleteHtml
+        actions: initial-html, handle-form, form-completed
         web-export: true
