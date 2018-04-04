@@ -14,5 +14,5 @@ packages:
         web-export: true
     sequences:
       upload-a-file-sequence:
-        actions: initial-html, handle-form, form-completed
+        actions: handle-form, form-completed, cloud-object-storage/write
         web-export: true
