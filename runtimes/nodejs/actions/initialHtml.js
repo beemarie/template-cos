@@ -1,23 +1,16 @@
-var fs = require('fs');
-
 function main(args) {
   return html(
     `<html>
       <body>
         <!-- Simple form which will send a POST request -->
-        <form action="./my-template-sequence" method="post">
-          <label for="POST-bucket">COS Bucket Name:</label>
-          <br>
-          <input id="POST-bucket" type="text" name="bucket" required>
-          <br>
-          <label for="POST-key">File name:</label>
-          <br>
-          <input id="POST-key" type="text" name="key" required>
-          <br>
-          <label for="POST-body">Body of the file:</label>
-          <br>
-          <input id="POST-body" type="textarea" name="body" required>
-          <br>
+        <form action="./my-template-sequence" method="post" enctype="multipart/form-data">
+          <br/><br/>
+          <input id="POST-bucket" type="text" name="bucket" placeholder="COS Bucket Name" required>
+          <br/><br/>
+          <input id="POST-key" type="text" name="key"  placeholder="File name" required>
+          <br/><br/>
+          <input id="POST-body" type="file" name="body" required>
+          <br/><br/>
           <input type="submit">
         </form>
       </body>
@@ -30,9 +23,9 @@ function html(html) {
     statusCode: 200,
     headers: {
       'Content-Type': 'text/html',
-      'Cache-Control': 'max-age=300'
+      'Cache-Control': 'max-age=300',
     },
-    body: html
+    body: html,
   };
 }
 exports.main = main;
