@@ -1,6 +1,7 @@
 const Busboy = require('busboy');
 
 function main(args) {
+    console.log(args)
   const busboy = new Busboy({
     headers: {
       'content-type': args.__ow_headers['content-type']
@@ -28,7 +29,7 @@ function main(args) {
       resolve({
         Bucket: result.bucket,
         Key: result.key,
-        Body: result.file.toString('base64'),
+        Body: result.file,
       });
     })
 
