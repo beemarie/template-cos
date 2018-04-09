@@ -3,7 +3,7 @@ function main(args) {
     `<html>
       <body>
         <!-- Simple form which will send a POST request -->
-        <form action="./my-template-sequence" method="post" enctype="multipart/form-data">
+        <form action="./upload-a-file-sequence" method="post" enctype="multipart/form-data">
           <br/><br/>
           <input id="POST-bucket" type="text" name="bucket" placeholder="COS Bucket Name" required>
           <br/><br/>
