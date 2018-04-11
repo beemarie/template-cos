@@ -1,7 +1,6 @@
 const Busboy = require('busboy');
 
 function main(args) {
-    console.log(args)
   const busboy = new Busboy({
     headers: {
       'content-type': args.__ow_headers['content-type']
